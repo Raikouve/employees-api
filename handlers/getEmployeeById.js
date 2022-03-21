@@ -4,7 +4,7 @@ module.exports = async (req, res, next) => {
   try {
     const { id } = req.params;
     const data = await fs.readFile("employees.json", "utf-8");
-    const parsedData = await JSON.parse(data);
+    const parsedData = JSON.parse(data);
 
     const findEmployeeById = parsedData.find(
       (employee) => employee.id === parseInt(id, 10)

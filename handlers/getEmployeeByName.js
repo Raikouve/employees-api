@@ -4,7 +4,7 @@ module.exports = async (req, res, next) => {
   try {
     const query = req.query.q;
     const data = await fs.readFile("employees.json", "utf-8");
-    const parsedData = await JSON.parse(data);
+    const parsedData = JSON.parse(data);
 
     const filterEmployeeByName = parsedData.filter((employee) =>
       employee.name.toLowerCase().includes(query.toLowerCase())

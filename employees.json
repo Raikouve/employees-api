@@ -1,11 +1,5 @@
 [
   {
-    "name": "Antônio Gonçalves",
-    "age": 22,
-    "occupation": "Frontend Developer",
-    "id": 1
-  },
-  {
     "name": "Henrique Silva",
     "age": 21,
     "occupation": "Frontend Developer",
@@ -46,5 +40,17 @@
     "age": 24,
     "occupation": "Cleaner",
     "id": 8
+  },
+  {
+    "name": "Gabriel Costa",
+    "age": 21,
+    "occupation": "Lawyer",
+    "id": 9
+  },
+  {
+    "name": "Antônio Gonçalves",
+    "age": 24,
+    "occupation": "Head of Development",
+    "id": 1
   }
 ]
