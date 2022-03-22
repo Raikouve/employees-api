@@ -5,6 +5,7 @@ const getEmployeeById = require("./handlers/getEmployeeById");
 const getEmployeeByName = require("./handlers/getEmployeeByName");
 const createEmployee = require("./handlers/createEmployee");
 const updateEmployee = require("./handlers/updateEmployee");
+const deleteEmployee = require("./handlers/deleteEmployee");
 
 const HTTP_STATUS_OK = 200;
 const PORT = 3000;
@@ -25,6 +26,8 @@ app.get("/employees/:id", (req, res, next) => getEmployeeById(req, res, next));
 app.post("/employees", (req, res, next) => createEmployee(req, res, next));
 
 app.put("/employees/:id", (req, res, next) => updateEmployee(req, res, next));
+
+app.delete("/employees/:id", (req, res, next) => deleteEmployee(req, res, next));
 
 app.listen(PORT, () => {
   console.log('Server On!');
